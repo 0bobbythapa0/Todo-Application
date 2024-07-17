@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Basic styling for demonstration */
+    input[type="text"] {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    p {
+      margin-top: 20px;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li span {
+  flex: 1 0 auto;  /* This will allow the span to grow and shrink as needed, but not beyond its content's size */
+  width: 200px;  /* Adjust as needed */
+  overflow: hidden;  /* This will prevent the text from overflowing its container */
+  text-overflow: ellipsis;  /* This will add an ellipsis (...) when the text overflows */
+  white-space: nowrap;  /* This will prevent the text from wrapping to the next line */
+}
+  </style>
+  </head>
+  <body>
+
+  <!-- Input field with Add button -->
+  <input type="text" id="inputField">
+  <button id="addButton">Add</button>
+
+  <!-- Paragraph with Edit and Save buttons
+  <p contenteditable="true" id="editableParagraph">Sample Text</p>
+  <button id="editButton">Edit</button>
+  <button id="saveButton">Save</button> -->
+  <ul id="task">
+    <!-- <li><span>task1 </span><button class="editButton">edit</button><button class="removeBtn">remove</button></li>
+    <li><span>task2 </span><button class="editButton">edit</button><button class="removeBtn">remove</button></li>
+    <li><span>task3 </span><button class="editButton">edit</button><button class="removeBtn">remove</button></li> -->
+  </ul>
+  <script src="script.js"></script>
+</body>
+
+</html>
